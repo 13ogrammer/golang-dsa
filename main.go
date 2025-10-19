@@ -2,6 +2,7 @@ package main
 
 import (
 	"dsa/algos"
+	"dsa/ds"
 	"fmt"
 )
 
@@ -20,4 +21,14 @@ func main() {
 	fmt.Printf("Is palindrome?: %s", input)
 	fmt.Println()
 	fmt.Println(algos.IsPalindrome(input))
+
+	// middleOfLinkedList test
+	listData := [7]int{2, 3, 5, 6, 7, 11, 15}
+	list := &ds.LinkedList{}
+	for _, v := range listData {
+		list.Append(v)
+	}
+	fmt.Printf("Middle of LinkedList %s", "2,3,5,6,7,11,15")
+	fmt.Println()
+	fmt.Println(algos.MiddleOfLinkedList(list.Head))
 }
