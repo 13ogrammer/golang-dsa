@@ -38,4 +38,9 @@ func main() {
 	fmt.Println()
 	fmt.Println(algos.MaxSumSubArray(maxSumInput, 3))
 
+	// longestSubstringWithoutRepeat
+	stringInput := "aaaabaaa"
+	fmt.Printf("String input: %s", stringInput)
+	fmt.Println()
+	fmt.Println(algos.LongestSubstring(stringInput))
 }
