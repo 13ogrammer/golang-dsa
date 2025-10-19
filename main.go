@@ -31,4 +31,11 @@ func main() {
 	fmt.Printf("Middle of LinkedList %s", "2,3,5,6,7,11,15")
 	fmt.Println()
 	fmt.Println(algos.MiddleOfLinkedList(list.Head))
+
+	// maxSumSubArray
+	maxSumInput := []int{1, 2, 3, 7, 4, 1}
+	fmt.Printf("Max sum input: %s", "1,2,3,7,4,1")
+	fmt.Println()
+	fmt.Println(algos.MaxSumSubArray(maxSumInput, 3))
+
 }
